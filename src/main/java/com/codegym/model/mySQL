@@ -1,0 +1,4 @@
+create database bookCategory;
+use bookCategory;
+insert into category(description, name)
+values ('KHVT', 'Sci-Fi');
