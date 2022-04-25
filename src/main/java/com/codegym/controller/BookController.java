@@ -45,7 +45,7 @@ public class BookController {
     public ModelAndView saveBook(@ModelAttribute("book") Book book) {
         bookService.save(book);
         ModelAndView modelAndView = new ModelAndView("book/create");
-        modelAndView.addObject("book", new Book());
+        modelAndView.addObject("newBook", new Book());
         modelAndView.addObject("message", "New book is created successfully");
         return modelAndView;
     }
@@ -67,7 +67,7 @@ public class BookController {
     public ModelAndView updateBook(@ModelAttribute("book") Book book) {
         bookService.save(book);
         ModelAndView modelAndView = new ModelAndView("book/edit");
-        modelAndView.addObject("book", book);
+        modelAndView.addObject("editBook", book);
         modelAndView.addObject("message", "This book is updated successfully");
         return modelAndView;
     }

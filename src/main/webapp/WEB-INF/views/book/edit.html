@@ -31,7 +31,11 @@
             <td>Category:</td>
             <td>
                 <select name="category">
-                    <option th:each="c : ${categories}" th:selected="(${book.category})and (${c.id}==*{category.id})"
+                    <!--                    <option th:each="c : ${categories}"-->
+                    <!--                            th:selected="(${book.category})and(${c.id}==*{category.id})"-->
+                    <!--                            th:text="${c.name}"-->
+                    <!--                            th:value="${c.id}"></option>-->
+                    <option th:each="c : ${categories}"
                             th:text="${c.name}"
                             th:value="${c.id}"></option>
                 </select>
